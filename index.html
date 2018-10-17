@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Code Review</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>THE CODE REVIEW</h1>
+    </header>
+    <main>
+      <div id="form-title">
+        <h2 class="signupTitle">Signup for our newsletter</h2>
+        <h3 class="signupDescript">Get the latest news on how your code is doing right in your inbox</h3>
+      </div>
+      <hr class="barone">
+      <hr class="bartwo">
+      <form id="form" action="index.html" method="post">
+        <fieldset>
+          <legend id="contactInfo" class="h2">Contact Information</legend>
+          <div class="formField">
+            <label for="fullName" class="h3 contactLabel" >Full Name</label>
+            <input id="fullName" type="text" name="user_name" placeholder="Required" required>
+          </div>
+          <div class="formField">
+            <label for="emailAddress" class="h3 contactLabel">Email Address</label>
+            <input id="emailAddress" type="email" name="user_email" placeholder="Required" required>
+          </div>
+          <div class="formField">
+            <label for="phoneNumber" class="h3 contactLabel">Phone Number</label>
+            <input id="phoneNumber" type="tel" name="user_phone">
+          </div>
+          <div class="formField">
+            <label for="streetAddress" class="h3 contactLabel">Street Address</label>
+            <input id="streetAddress" type="text" name="user_address">
+          </div>
+          <div class="formField">
+            <label for="city" class="h3 contactLabel">City</label>
+            <input id="city" type="text" name="user_city">
+          </div>
+          <div class="formField">
+            <label for="state" class="h3 contactLabel">State</label>
+            <select id="state" name="user_state">
+              <option value="" disabled selected hidden> Choose State</option>
+              <option value="al">AL</option>
+              <option value="ak">AK</option>
+              <option value="az">AZ</option>
+              <option value="ar">AR</option>
+              <option value="ca">CA</option>
+              <option value="co">CO</option>
+              <option value="ct">CT</option>
+              <option value="de">DE</option>
+              <option value="fl">FL</option>
+              <option value="ga">GA</option>
+              <option value="hi">HI</option>
+              <option value="id">ID</option>
+              <option value="il">IL</option>
+              <option value="in">IN</option>
+              <option value="ia">IA</option>
+              <option value="ks">KS</option>
+              <option value="ky">KY</option>
+              <option value="la">LA</option>
+              <option value="me">ME</option>
+              <option value="md">MD</option>
+              <option value="ma">MA</option>
+              <option value="mi">MI</option>
+              <option value="md">MD</option>
+              <option value="ms">MS</option>
+              <option value="mo">MO</option>
+              <option value="mt">MT</option>
+              <option value="ne">NE</option>
+              <option value="nv">NV</option>
+              <option value="nh">NH</option>
+              <option value="nj">NJ</option>
+              <option value="nm">NM</option>
+              <option value="ny">NY</option>
+              <option value="nc">NC</option>
+              <option value="nd">ND</option>
+              <option value="oh">OH</option>
+              <option value="ok">OK</option>
+              <option value="or">OR</option>
+              <option value="pa">PA</option>
+              <option value="ri">RI</option>
+              <option value="sc">SC</option>
+              <option value="sd">SD</option>
+              <option value="tn">TN</option>
+              <option value="tx">TX</option>
+              <option value="ut">UT</option>
+              <option value="vt">VT</option>
+              <option value="va">VA</option>
+              <option value="wa">WA</option>
+              <option value="wv">WV</option>
+              <option value="wi">WI</option>
+              <option value="wy">WY</option>
+            </select>
+          </div>
+          <div class="formField zipForm">
+            <label for="zip" class="h3 contactLabel zipLabel">Zip Code</label><br>
+            <input id="zip" type="text" name="user_zip">
+          </div>
+        </fieldset>
+        <hr class="bartwo bottomBar">
+        <fieldset>
+          <legend id="newsletterInfo" class="h2">Newsletter</legend>
+          <div class="newsletterSection">
+            <label class="h3">Select the newsletters you would like to recieve</label>
+            <div class="newsletterOption">
+              <input id="htmlNews" type="checkbox" name="user_newsletters" value="newsletters_htmlNews">
+              <label for="htmlNews" class="h3">HTML News</label>
+            </div>
+            <div class="newsletterOption">
+              <input id="cssNews" type="checkbox" name="user_newsletters" value="newsletters_cssNews">
+              <label for="cssNews" class="h3">CSS News</label>
+            </div>
+            <div class="newsletterOption">
+              <input id="javascriptNews" type="checkbox" name="user_newsletters" value="newsletters_javascriptNews">
+              <label for="javascriptNews" class="h3">JavaScript News</label>
+            </div>
+          </div>
+          <div class="newsletterSection">
+            <label class="h3">Newsletter format</label>
+              <div class="newsletterOption">
+                <input id="html" type="radio" name="user_format" value="format_html">
+                <label for="html" class="h3">HTML</label>
+              </div>
+              <div class="newsletterOption">
+                <input id="plainText" type="radio" name="user_format" value="format_plainText">
+                <label for="plainText" class="h3">Plain Text</label>
+              </div>
+          </div>
+          <div class="newsletterSection">
+            <label for="topics" class="h3">Other topics you'd like to hear about</label>
+            <textarea id="topics" name="user_topics"></textarea>
+          </div>
+        </fieldset>
+          <div id="signup">
+            <button type="submit" name="button">Sign Up</button>
+          </div>
+      </form>
+    </main>
+    <footer>
+      <h3>Copyright The Code Review</h3>
+    </footer>
+  </body>
+</html>
