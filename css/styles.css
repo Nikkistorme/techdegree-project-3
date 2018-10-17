@@ -160,10 +160,6 @@ NEWSLETTER
   bottom: -11em;
 }
 
-input[type="checkbox"] {
-  pointer-events: check;
-}
-
 .newsletterSection {
   margin-left: .25em;
   margin-top: 1em;
