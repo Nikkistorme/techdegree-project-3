@@ -19,7 +19,7 @@ h1, h2, h3 {
 
 h1, .h1 {
   font-size: 1.1em;
-  font-weight: 850;
+  font-weight: bold;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
 }
@@ -67,7 +67,7 @@ legend {
   position: absolute;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+.textField {
   background-color: #EFF0F1;
   border-style: none;
   border-radius: 10px;
@@ -75,7 +75,7 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
   width: 90vw;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+.textField:focus {
   transition: border 0.25s ease;
   outline: 0;
   border: 2px solid #2D3945;
@@ -138,7 +138,7 @@ CONTACT INFORMATION
 #fullName, #emailAddress, #phoneNumber, #streetAddress, #city, #state, #zip {
   margin-top: .75em;
   padding-left: 1.3em;
-  color: lightgrey;
+  color: #2D3945;
 }
 
 #state {
@@ -175,7 +175,7 @@ NEWSLETTER
   margin-top: 1em;
   height: 6em;
   padding: 1em 1.3em 1em 1.3em;
-  color: lightgrey;
+  color: #2D3945;
   width: 88vw;
 }
 
