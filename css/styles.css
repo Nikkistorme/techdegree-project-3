@@ -193,7 +193,7 @@ BUTTON
   height: 3.5em;
   background-color: #4EBBB5;
   border-style: none;
-  border-radius: 5%;
+  border-radius: 10px;
   color: white;
   font-weight: bold;
 }
@@ -212,6 +212,12 @@ footer h3 {
 /***************
 MEDIA QUERIES
 ***************/
+
+@media (min-width: 482px) {
+  #newsletterInfo {
+    top: 57em;
+  }
+}
 
 @media (min-width: 768px) {
 
